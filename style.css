@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
 }
@@ -7,7 +13,6 @@ body {
     color: white;
     text-align: center;
     font-size: 60px;
-
 }
 
 nav {
@@ -17,43 +22,55 @@ nav {
     font-size: 50px;
     width: 100%;
     height: 10%;
-
 }
 
-span {
+nav span {
     display: inline-block;
     width: 20%;
     height: 5%;
 }
 
+.row {
+    display: flex;
+}
+
+.container {
+    display: flex;
+    height: 91vh;
+}
 
 .box1 {
     background-color: bisque;
     box-sizing: border-box;
     display: inline-block;
     border: 18px solid rgb(176, 143, 44);
-
-
-    border-radius: 5%;
+    border-radius: 40px;
     font-size: 20px;
-    width: 20%;
-    height: 1003px;
+    width: 311px;
+    margin: 0px;
+    padding: 10px;
+    /* height: auto; */
+    flex-direction: column;
+    text-align: center;
+}
 
-
+.box1 p {
+    margin-bottom: 20px;
 }
 
 .box2 {
     box-sizing: border-box;
-    display: inline-block;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
+    display: flex;
+    width: calc(100vw - 328px);
+    justify-content: flex-end;
+    align-items: stretch;
+    background: no-repeat top/100% url('./assets/monalisa.jpeg');
+}
 
-    width: 80%;
-    height: 108vh;
-
-
-
+.image {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
 }
 
 .last {
@@ -65,6 +82,4 @@ span {
     clear: both;
     padding: 20px;
     justify-content: bottom;
-
-
 }
