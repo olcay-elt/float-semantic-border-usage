@@ -52,6 +52,7 @@ nav span {
     /* height: auto; */
     flex-direction: column;
     text-align: center;
+    overflow-y: auto;
 }
 
 .box1 p {
